@@ -4,7 +4,7 @@ from keras.losses import binary_crossentropy
 
 
 # Loss functions which can be used in image segmentation
-# Stolen from here: https://github.com/shruti-jadon/Semantic-Segmentation-Loss-Functions/blob/master/loss_functions.py
+# Taken from here: https://github.com/shruti-jadon/Semantic-Segmentation-Loss-Functions/blob/master/loss_functions.py
 
 class Semantic_loss_functions(object):
     beta = 0.25

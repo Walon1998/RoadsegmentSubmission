@@ -3,8 +3,8 @@ from keras.layers import Conv2D, BatchNormalization, LeakyReLU, Add, MaxPooling2
 from keras.models import Model
 
 
-# Unet which uses and Xception model
-# Stolen from here: https://www.kaggle.com/meaninglesslives/unet-xception-keras-for-pneumothorax-segmentation and https://github.com/shruti-jadon/Semantic-Segmentation-Loss-Functions/blob/master/loss_functions.py
+# Unet which uses and Xception model pretrained
+# Inspired by: https://www.kaggle.com/meaninglesslives/unet-xception-keras-for-pneumothorax-segmentation and https://github.com/shruti-jadon/Semantic-Segmentation-Loss-Functions/blob/master/loss_functions.py
 
 
 def conv_block(x, filters, size, strides=(1, 1), padding='same', activation=True):

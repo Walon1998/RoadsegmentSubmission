@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# Used to create a plot for the report
+
 xcpetion = [
     "2139f",
     "af619",

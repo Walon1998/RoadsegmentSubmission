@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# creates plot for the report
+
 
 import matplotlib.lines as mlines
 import matplotlib.pyplot as plt

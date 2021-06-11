@@ -5,7 +5,6 @@ import numpy as np
 from PIL import Image
 
 # creates masks from submission file
-# Have never used so far
 
 label_file = 'temp_submission.csv'
 

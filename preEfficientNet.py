@@ -4,8 +4,8 @@ from keras.models import Model
 from tensorflow.python.keras.applications.efficientnet import EfficientNetB4
 
 
-# Unet which uses and EfficientNetB4
-# Stolen from here: https://www.kaggle.com/meaninglesslives/unet-with-efficientnet-encoder-in-keras
+# Unet which uses and EfficientNetB4 pretrained
+# Inspired by: https://www.kaggle.com/meaninglesslives/unet-with-efficientnet-encoder-in-keras
 # Note that in the link an earlier version of EfficientNetB4 is used and I had to change some stuff.
 
 

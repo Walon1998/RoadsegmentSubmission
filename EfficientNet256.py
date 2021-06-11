@@ -5,8 +5,8 @@ from keras.models import model_from_json
 from tensorflow.python.keras.applications.efficientnet import EfficientNetB4
 
 
-# Unet which uses and EfficientNetB4
-# Stolen from here: https://www.kaggle.com/meaninglesslives/unet-with-efficientnet-encoder-in-keras
+# Unet which uses and EfficientNetB4 256
+#  Inspired by:  https://www.kaggle.com/meaninglesslives/unet-with-efficientnet-encoder-in-keras
 # Note that in the link an earlier version of EfficientNetB4 is used and I had to change some stuff.
 
 

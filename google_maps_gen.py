@@ -14,8 +14,6 @@ from skimage.color import rgb2gray
 from skimage.io import imsave
 
 # This file is used to create more training data
-# Stolen from here: https://github.com/daniCh8/road-segmentation-eth-cil-2020
-# The above link is worth a read, they scored 2nd place last year!
 # It proposes 4 masks, you can choose one by writing 1,2,3,4, if you write nothing the image is skipped.
 
 los_angeles = [
