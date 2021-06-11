@@ -45,12 +45,6 @@ orig_data = [
 
 ]
 
-# patched_data = [
-#     ["Xception 400", "Xception", 0.85999],
-#     ["EfficientNet 400", "EfficientNet", 0.89738],
-#
-# ]
-
 data_pd = pd.DataFrame(columns=['Score', 'Model', 'Dataset'], dtype=int)
 
 for entry in google_data:
@@ -59,8 +53,6 @@ for entry in google_data:
 for entry in orig_data:
     data_pd = data_pd.append({'Score': entry[2], 'Model': entry[0], 'Dataset': 'Kaggle', 'Family': entry[1], }, ignore_index=True)
 
-# for entry in patched_data:
-#     data_pd = data_pd.append({'Score': entry[2], 'Model': entry[0], 'Dataset': 'Patched', 'Family': entry[1], }, ignore_index=True)
 
 sns.set(style="white", rc={'figure.figsize': (16, 9)}, font_scale=1.5)
 
