@@ -28,12 +28,19 @@ hyper_params = {
     "epochs": int(sys.argv[2]),
     "batch_size": int(sys.argv[3]),
     "model": sys.argv[4],
+    "name": sys.argv[5]
 }
 
 # Sets seed for reproducibility
 tf.random.set_seed(420)
 np.random.seed(123)
 random.seed(123)
+
+# Check if GPU available and set memory growth instead of preallocating
+# Preallocating can sometimes fail
+physical_devices = tf.config.experimental.list_physical_devices('GPU')
+assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
+config = tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 optimizer = tf.keras.optimizers.Adam(hyper_params["learning_rate"])
 model = None
@@ -76,4 +83,4 @@ model.compile(optimizer=optimizer,
 # Train on google data
 model_history = model.fit(google_ds, epochs=hyper_params["epochs"], verbose=1, validation_data=train_ds)
 
-create_submission(model, test_ds)
+create_submission(model, test_ds, hyper_params['name'])
