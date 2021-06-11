@@ -60,8 +60,8 @@ To create an ensemble, add the model names of which you want to create an ensemb
 python create_ensemble.py
 ```
 
-This will then create a new ensemble in [Predictions](./Predictions) using the combined names of the input models. The predictions we used to create our final submissions are already included
-in [Predictions](./Predictions). We have always used the experiment key from [Comet](https://www.comet.ml/walon1998/roadsegmentation?shareable=BsDLejxcShYvYE3OK6R1gTTMN) as the model name.
+This will then create a new ensemble in [Predictions](./Predictions) using the combined names of the input models. The predictions we used to create our final submissions are already included.
+We have always used the experiment key from [Comet](https://www.comet.ml/walon1998/roadsegmentation?shareable=BsDLejxcShYvYE3OK6R1gTTMN) as the model name.
 
 ## Change Dataset
 
