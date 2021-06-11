@@ -90,8 +90,8 @@ enter. This will add the image to the [Additional Data](./Data/Additional_Data/)
 entering a number. Make sure that displaying figures is non-blocking in your environment, otherwise it will not be possible to provide input while the plot is displayed (Verified to work in PyCharm).
 
 ### GC-DCNN
+We have implemented another baseline that unfortunately did not make it into the report. Nevertheless, we want to mention it briefly here.
 
-GC-DCNN
 
 
 
