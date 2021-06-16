@@ -89,7 +89,7 @@ The python script will propose 100 new possible training images. For each image,
 enter. This will add the image to the [Additional Data](./Data/Additional_Data/) directory. If none of the masks are appealing, and you want to skip the image, you can press the Enter key without
 entering a number. Make sure that displaying figures is non-blocking in your environment, otherwise it will not be possible to provide input while the plot is displayed (Verified to work in PyCharm).
 
-### GC-DCNN
+## GC-DCNN
 We have implemented another baseline that unfortunately did not make it into the report. Nevertheless, we want to mention it briefly here.
 
 
