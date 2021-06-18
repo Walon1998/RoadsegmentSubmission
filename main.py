@@ -19,6 +19,7 @@ from xception256 import xception256
 from xception128 import xception128
 from prexception import prexception
 from preEfficientNet import preEfficientNet
+from gc_dcnn import gc_dcnn_model
 import numpy as np
 import random
 
@@ -69,6 +70,9 @@ elif hyper_params["model"] == "efficientnet128":
 elif hyper_params["model"] == "preefficientnet":
     train_ds, test_ds, google_ds, normalization_dataset = Datagenerator.get_data(hyper_params["batch_size"], img_size_input=380, img_size_groundtruth=384, scale=False)
     model = preEfficientNet(normalization_data=normalization_dataset)
+elif hyper_params["model"] == "gc-dcnn":
+    train_ds, test_ds, google_ds, normalization_dataset = Datagenerator.get_data(hyper_params["batch_size"], img_size_input=400, img_size_groundtruth=400, scale=True)
+    model = gc_dcnn_model()
 else:
     print("Specified wrong model")
     exit(-1)

@@ -28,6 +28,7 @@ where model can be one of the following:
 * [efficientnet256](./EfficientNet256.py)
 * [efficientnet128](./EfficientNet128.py)
 * [preefficientnet](./preEfficientNet.py)
+* [gc-dcnn](./gc_dcnn.py)
 
 Example:
 
@@ -91,7 +92,9 @@ entering a number. Make sure that displaying figures is non-blocking in your env
 
 ## GC-DCNN
 We have implemented another baseline that unfortunately did not make it into the report. Nevertheless, we want to mention it briefly here.
-
+This approach tries to preserve more global context (GC) data by using kernels with dilation, and a spatial pyramid pooling layer.
+Even though in their report, the authors achieved better results than their baselines, with our data it performed about as well as the more established (and simpler) U-Net.
+Details can be found in [the paper](https://doi.org/10.1016/j.ins.2020.05.062).
 
 
 
