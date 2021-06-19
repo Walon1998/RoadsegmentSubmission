@@ -52,6 +52,7 @@ bsub -n 8 -W 12:00 -R "rusage[mem=4096, ngpus_excl_p=1]" python main.py <learnin
 
 Since we have trained over 150 models and used an ensemble to make our final predictions, it is not possible to easily reproduce our results. However, as we used [Comet](https://www.comet.ml) to keep
 track of all our experiments, you can take a look at everything we did, see [here!](https://www.comet.ml/walon1998/roadsegmentation?shareable=BsDLejxcShYvYE3OK6R1gTTMN)
+We include the predictions of the best models so that the ensemble can be easily reproduced.
 
 ## Create an Ensemble
 
