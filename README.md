@@ -1,6 +1,7 @@
 # The Predictors - Submission
 
 This document describes how our code can be used. The report can be found [here!](./report.pdf)
+The entire project can be found on [Github](https://github.com/Walon1998/RoadsegmentSubmission)
 
 ## Install dependencies
 
